@@ -8,5 +8,5 @@
   "eslint.validate": ["typescript", "html"],
   "editor.bracketPairColorization.enabled": true,
   "gitlens.codeLens.enabled": false,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }
