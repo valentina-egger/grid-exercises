@@ -34,6 +34,10 @@ body {
 /*  ---- start exercise 1 ----  */
 
 .grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
 }
 
 /*  ---- end exercise 1 ----  */
@@ -50,11 +54,19 @@ body {
 .item1 {
   background-color: rgba(74, 102, 112, 0.7);
   border: 5px solid rgba(74, 102, 112, 1);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .item2 {
   background-color: rgba(214, 162, 173, 0.7);
   border: 5px solid rgba(214, 162, 173, 1);
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 /*  ---- end exercise 2 ----  */
@@ -67,9 +79,23 @@ body {
   gap: 10px;
 }
 
+.one {
+  grid-column: span 2;
+}
+
+.four {
+  grid-column-start: 2;
+}
+
 /*  ---- end exercise 3 ----  */
 
 /*  ---- start exercise 4 ----  */
+.layout-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
 
 .card {
   display: grid;
@@ -86,6 +112,9 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tags > * {
